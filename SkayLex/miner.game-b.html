@@ -1,0 +1,61 @@
+ <style>
+ body{
+font-family: monospace;
+}
+ </style>
+<script >
+var r= prompt("row?");
+var c = prompt(" col?");
+////запретить  лезть на елку и выход за периметр
+//////////////Start//////////////////////
+var row =1;
+while(row <= 11){
+
+
+
+//////////////Start////////////////
+    var col =1;
+    while( col<= 10){
+        if(row==r && col==c){
+            document.write("&#9201; ")
+        }
+        if(row==1 || row == 10 || col==1 || col==10){
+            document.write("&#127794; ");
+        }else{
+            if(row == 11){
+                document.write(col+" ")
+            }else{
+            document.write(". ");
+        }
+        }
+
+/*
+
+#
+##
+###
+####
+#####
+*/
+
+/*
+
+
+
+
+        col++;
+
+    }
+/////////////Finish/////////////////
+document.write(row+"<br>");
+row++;
+}
+//////////////Finish/////////////////////
+
+
+
+
+
+
+
+</script>
