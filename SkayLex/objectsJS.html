@@ -1,0 +1,44 @@
+<!-- обьект- контейнер , вещь , совокупность или структура которе содержит своиства и методы. -->
+<!-- objects
+  properties
+  methods() -->
+  <script>
+    //  var car = {
+    //     //  properties
+    //     brand: "BMW" ,
+    //     kuzov: "Sedan" ,
+    //     volume: 4.5 ,
+    //     new: false ,
+    //
+    //
+    //   //  methods
+    //
+    //   beep: function(){
+    //
+    //   }
+    //  }
+    //
+    // alert("Beeeep Beeep");
+    //  nav это обьект навменю
+    var nav = {
+      id:"main-navigation",
+      style:{
+        color:"red",
+        border: "1px solid black",
+        margin: "20px"
+      },
+      content:{
+        href: "/about",
+        text: "about us"
+      },
+      // methods()
+      render: function(){
+        document.write(`<nav id="${nav.id} style  color="${nav.style.color}""><a href=${nav.content.href}>${nav.content.text}</a></nav>`)
+      }
+    };
+    nav.render();
+     </script>
+     <!-- objects -> design pattern (MVC)
+              -> COLLECTIONS (arrays)
+               iterate, search, sort, CRUD/BREAD
+                 DATABASE   надо все это учить -->
