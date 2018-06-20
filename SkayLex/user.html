@@ -1,0 +1,32 @@
+<script>
+//Declare Class.
+
+class User{
+    //structure
+    constructor( login , email ,avatar  , password , ){
+     this.login = login ;
+     this.email = email ;
+     this.avatar = avatar ;
+     if(password == undefined){
+         this.password = "23323";
+     }else{
+         this.password = password ;
+     }
+      //прототип user
+    }
+    render(){
+        document.write(`<h2>${this.login}</h2>`);
+        document.write(`<h2>${this.email}</h2>`);
+        document.write(`<h2><img src= ${this.avatar}></h2>`);
+    }
+}
+
+//using the class
+var user1 = new User("Jora" ,  "434343" , "https://picsum.photos/100/100/?image=222 " );
+var user2 = new User("Kolea");
+// console.log( user1 );
+// console.log( user2 );
+user1.render();
+
+
+</script>
