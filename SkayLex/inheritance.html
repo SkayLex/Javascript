@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// oop --> inheritance
+//
+//
+//
+// parentClass ---> ChildClass
+// Object --> базовый класс
+ // var h1 = document.querySelector(`h1`)
+ //base class / super class
+class Car{
+//brand ,model,year,power,photo
+constructor(){
+  this.brand = "Mercedes";
+}
+about(){
+    alert(`this is a ${this.brand}-car!!!`);
+}
+render(){
+  // to html
+}
+}
+//extended class / inheriting
+class SportCar extends Car{
+  // acceleration
+  // about(){
+  //     alert("this is a sportcar!!!")
+  }
+
+class HeavyCar extends Car{
+    // capacity
+}
+
+class MilitaryCar extends Car{
+    //armour
+}
+
+
+var c = new Car();
+c.about();
+
+var sc = new SportCar();
+    sc.about();
+
+//Car --> SportCar --> object1,object2.....
+    //   --> HeavyCar --> object3,object4
+    //   --> MilitaryCar --> object5,object6 ...
+
+допилить конструктор и добавить метод рендер в html!!!!
+
+
+    </script>
+
+</body>
+</html>
