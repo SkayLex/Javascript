@@ -1,0 +1,16 @@
+<script>
+var email = prompt("your email adress?");
+//validate email adress
+if( email.indexOf("@") > 0
+&&
+email.indexOf(".") > email.indexOf("@") + 1
+&&
+ // email.indexOf(".") != email.length - 1)
+ !email.endsWith(".")
+ {
+ alert("adress OK");
+}
+else{
+    alert("invalid email adress!")
+}
+</script>

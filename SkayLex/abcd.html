@@ -1,0 +1,25 @@
+<script>
+//fixed
+    const USERNAME = "admin";
+    const PASSWORD = "123456";
+
+// user input
+
+var username = prompt("your login:");
+var password = prompt(" your password");
+
+//1)Caps
+if(username.toUpperCase()==username){
+    alert("caps ON");
+}
+//2)Whitespace
+  username = username.trim();
+
+if(username == USERNAME && password == PASSWORD){
+    alert("Welcome!");
+}else{
+    alert("Denied!");
+}
+
+
+</script>
