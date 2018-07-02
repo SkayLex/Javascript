@@ -1,0 +1,8 @@
+#carousel div {
+    display:inline-block;
+    width: 30%;
+}
+#carousel img{
+    width: 100%;
+
+}
