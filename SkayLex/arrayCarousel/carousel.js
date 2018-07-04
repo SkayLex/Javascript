@@ -40,3 +40,14 @@ function prev(){
       showCarousel();
   }
 showCarousel();
+setInterval(next, 3000);
+//JavaScript
+//setTimeout(f, interval)
+//setInterval(f, interval)
+//clearTimeout(id)
+// clearInterval(id)
+var n = 1;
+setTimeout(function(){alert(n) }, 500);
+while(n<=10){
+  n++;
+}

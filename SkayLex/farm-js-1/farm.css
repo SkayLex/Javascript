@@ -1,0 +1,24 @@
+#farm{
+    height: 50px;
+    border-bottom: 5px solid green;
+}
+
+#farm .box{
+    display:inline-block;
+    border: 1px solid #CDC;
+    width: 48px;
+    height: 48px;
+
+}
+
+#farm .corn{
+    background-image: url(corn-icon.png);
+}
+
+#farm .tomato{
+    background-image: url(tomato-icon.png);
+}
+
+#farm .potato{
+    background-image: url(potato-icon.png);
+}
